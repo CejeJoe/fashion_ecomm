@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion and Design House</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-green">
+    <header>        
+        <nav>
+            <div class="logo">
+                Élégante
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="cart-link"><a href="#" id="cart-toggle">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="column">
+                <h2>Welcome to  <br>Fashion & Design House</h2>
+                <p>Where Style Meets Creativity <br>Explore our latest trends and hot selling products.</p>
+                <a href="#" class="btn">Explore Now</a>
+            </div>
+            <div class="column">
+                <div class="element">
+                    <div class="woman"></div>
+                </div>
+                <div class="after"></div>
+            </div>
+        </section>
+    </div>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="col">
+                <div class="image-cards">
+                    <div></div>
+                </div>
+                </div>
+                <div class="col">
+                <h2>ABOUT US</h2>
+                <h1>
+                    Exploring Every Angle<br> of  Fashion Around the Globe</h1>
+                <p>
+                    Uncover Every Stitch of Fashion 
+                    with Us. Dive into hidden <br> gems, embrace
+                    diverse styles, and embark on unforgettable 
+                    fashion adventures. Join us as we explore 
+                    the world of style.
+                </p>
+                    <button type="button">Explore More</button>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="services-container">
+              <div class="col">
+                <h3>OUR SERVICES</h3>
+                <h1>Design Services & Bespoke Pieces</h1>
+                <p>
+                    We offer expert design consultations, bespoke pieces, and ready-to-wear collections curated by our in-house designers.
+                </p>
+                <button type="button">Explore More</button>
+              </div>
+            </div>
+        </section>
+
+        <!-- Shop Section: product listings for ecommerce -->
+        <section id="shop">
+            <div class="shop-header">
+                <h1>Shop Products</h1>
+                <p>Premium Fashion Items - Limited Time Discounts</p>
+            </div>
+            <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="product-card">
+                    <img src="assets/img/jacket.png" alt="Classic Leather Jacket">
+                    <h4>Classic Leather Jacket</h4>
+                    <p class="price"><span class="discount-price">120,000 UGX</span> <span class="current-price">85,000 UGX</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/dress.png" alt="Summer Sundress">
+                    <h4>Summer Sundress</h4>
+                    <p class="price"><span class="discount-price">65,000 UGX</span> <span class="current-price">45,000 UGX</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/black_bag.png" alt="Designer Handbag">
+                    <h4>Designer Handbag</h4>
+                    <p class="price"><span class="discount-price">180,000 UGX</span> <span class="current-price">125,000 UGX</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/sneakers.png" alt="Premium Sneakers">
+                    <h4>Premium Sneakers</h4>
+                    <p class="price"><span class="discount-price">95,000 UGX</span> <span class="current-price">65,000 UGX</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/contact.jpg" alt="Elegant Blouse">
+                    <h4>Elegant Blouse</h4>
+                    <p class="price"><span class="discount-price">75,000 UGX</span> <span class="current-price">50,000 UGX</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/classic_watch.png" alt="Classic Watch">
+                    <h4>Classic Watch</h4>
+                    <p class="price"><span class="discount-price">150,000 UGX</span> <span class="current-price">100,000 UGX</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div id="cart-panel" class="cart-panel hidden">
+                <h3>Your Cart</h3>
+                <div id="cart-items"></div>
+                <p id="cart-total">Total: 0 UGX</p>
+                <button id="checkout-btn">Checkout</button>
+                <button id="close-cart">Close</button>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="left">
+              <div class="card-logo">
+                <b>Élégante</b>
+              </div>
+              <h2>Contact Élégante Fashion</h2>
+              <p class="text">
+                Ready to immerse yourself in the world of fashion? Contact us to be part of the journey! Don't miss out on any of our latest updates.
+              </p>
+              <a href="index.html">Go back home</a>
+            </div>
+                        <form action="#contact" method="post" id="form" class="right">
+                            <h3>Don't Miss Out</h3>
+                            <label for="name">Full Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="name"><br>
+                            <div class="error one"></div>
+                            <label for="subject">Subject:</label><br>
+                            <select id="select" name="subject" >
+                                    <option selected disabled value="">Select</option>
+                                    <option value="Inquiry">Inquiry</option>
+                                    <option value="Complaint">Complaint</option>
+                                    <option value="Appreciation">Appreciation</option>
+                            </select><div class="error two"></div><br>           
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" placeholder="Email"><br>
+                            <div class="error three"></div>
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <input type="submit" class="btn" value="Login">
+                        </form>
+        </section>        
+    </main>
+
+    <footer>
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+                At Élégante, we celebrate global fashion diversity, showcasing cultural richness, innovation, and creativity. Join us to explore, inspire, and connect through style.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Shop">Products</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Plot 74 New Portbell road, Kampala, Uganda</p>
+            <p>Phone: +256 742841308</p>
+            <p>Email: collinjoe95@gmail.com</p>
+        </div>
+        <div class="line"></div><p class="linep">All rights reserved. Designed by Ngonzi Collin Joe</p>
+    </footer>
+
+<script>
+    const form = document.getElementById("form");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const username = document.getElementById("name");
+        const select = document.getElementById("select");
+        const email = document.getElementById("email");
+        const errorOne = document.querySelector('.one');
+        const errorTwo = document.querySelector('.two');
+        const errorThree = document.querySelector('.three');
+
+        const usernameValue = username.value.trim();
+        const selectValue = select.value.trim();
+        const emailValue = email.value.trim();
+
+        let isValid = true;
+
+        if (!usernameValue) {
+            errorOne.innerHTML = "Please enter a username";
+            username.style.borderBottomColor = 'red';
+            isValid = false;
+        } else {
+            errorOne.innerHTML = '';
+            username.style.borderBottomColor = '';
+        }
+
+        if (!selectValue) {
+            errorTwo.innerHTML = "Please Select a Subject";
+            select.style.borderBottomColor = 'red';
+            isValid = false;
+        } else {
+            errorTwo.innerHTML = '';
+            select.style.borderBottomColor = '';
+        }
+
+        if (!emailValue) {
+            errorThree.innerHTML = "Please enter an email address";
+            email.style.borderBottomColor = 'red';
+            isValid = false;
+        } else {
+            errorThree.innerHTML = '';
+            email.style.borderBottomColor = '';
+        }
+
+        if (isValid) {
+            window.location = "index.html";
+            return false;
+        }
+    });
+</script>
+</body>
+</html>
